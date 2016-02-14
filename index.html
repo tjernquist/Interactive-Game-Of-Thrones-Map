@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+       
+        <title>Gesällprov</title> 
+
+        <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/Gesall.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="CSS/gesall.css">
+
+    </head> 
+    <body onload="initialize()"> 
+        <div id="map_canvas" style="background: #1B2D33;"></div> 
+
+        <div id="container">
+
+            <div id="settings">
+                
+                <div id="header">
+                    <div id="hide">-</div>
+                    <div id="slider">
+                        <label>Episode: &nbsp; </label>
+                        <b id="amount"></b>
+                        <div id="slider-range-max">
+                        </div>
+                        <button id="playButton"  onclick="play()">&#9658</button>
+                        <button  id="pauseButton" onclick="pause()">&#10074; &#10074;</button>
+                    </div>
+                </div>
+
+                <ul id="checkboxes">
+                    <li><input type="checkbox" id="toggleAreas" onClick="toggleLayer('toggleAreas')">Show areas<br></li>
+                </ul>
+                
+                <div id="coords"></div> <br>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html> 

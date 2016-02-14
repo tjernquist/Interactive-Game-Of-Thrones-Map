@@ -1,0 +1,98 @@
+html { height: 100% 
+}
+
+body { 
+    height: 100%; margin: 0px; padding: 0px 
+}
+
+#map_canvas {
+    height: 100%; z-index: 1;
+}
+
+#gmnoprint {
+    width: auto;
+}
+
+#container {
+    position: absolute; 
+    top: 10px;
+    right: 10px; 
+    z-index: 99; 
+}
+
+#settings{
+    width: 150px;
+    height: 300px;    
+    padding: 50px;
+    border: 1px solid black;
+    background-color: lightslategrey;
+    box-sizing: border-box;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+
+#settings:hover{
+    background-color: blanchedalmond;
+}
+
+#settings #hide {
+    position: absolute; 
+    top: 5px;
+    right: 10px; 
+    z-index: 99; 
+}
+
+#settings #slider {
+    position: absolute; 
+    top: 15px;
+    left: 20px; 
+    z-index: 99; 
+
+}
+
+#slider #slider-range-max {
+    margin-top: 5px;
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+#checkboxes {
+    margin: 100%;
+}
+
+#checkboxes li {
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    list-style-type: none;
+}
+
+#coords {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#playButton{
+
+    border: 1px solid #FFF;
+    width: 50px;
+    background-color: firebrick;
+    border-radius: 4px;
+    color: #000000;
+}
+
+#playButton.active {
+    border: 1px solid red;
+    background-color: red;
+    color: #FFF;
+}
+
+#pauseButton{
+    border: 1px solid #FFF;
+    width: 50px;
+    background-color: firebrick;
+    border-radius: 4px;
+    color: #000000;
+
+}
