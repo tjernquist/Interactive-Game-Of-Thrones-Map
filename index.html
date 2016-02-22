@@ -35,21 +35,34 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Page 1-1</a></li>
-                                <li><a href="#">Page 1-2</a></li>
-                                <li><a href="#">Page 1-3</a></li>
-                            </ul>
+                        <li >
+                            <a target="_blank" href="http://awoiaf.westeros.org/">ASOIF Wiki</a>
+
                         </li>
                         <li><a href="#">GOT Quiz</a></li>
                         <li><a href="#">Page 3</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li id="hello"><a href="#"><span class="glyphicon glyphicon-info-sign"></span> Help</a></li>
+
+                        <li ><a href="#" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
+                    <div id="dialog" title="Basic dialog">
+                        <p>Some tips for using this interactive Game Of Thrones map and som general information:<p>
+                        <ul id="infolist">
+                            <li><span class="glyphicon glyphicon glyphicon-education"></span> This is a student project for the course Webbutveckling - Klientsidan at Stockholms University.</li>
+                            <li><span class="glyphicon glyphicon-picture"></span> This is an interactive map, hover your mouse over the markers on the map or click them to reveal more information. </li>
+                            <li><span class="glyphicon glyphicon-zoom-in"></span> Zoom in using your mousewheel or left click the map twice.</li>
+                            <li><span class="glyphicon glyphicon-zoom-out"></span> Zoom out using your mousewheel or right click the map twice.</li>
+                            <li><span class="glyphicon glyphicon-facetime-video"></span> The map currently only supports the TV-version of Game Of Thrones.</li>
+                            <li><span class="glyphicon glyphicon-resize-small"></span> To minimize the settings-window to the right, press the hide button.</li>
+                            <li><span class="glyphicon glyphicon-warning-sign"></span> Warning, this page may contain spoilers.</li>
+                            <li><span class="glyphicon glyphicon glyphicon-phone"></span> This page is mobile friendly.</li>
+                            <li><span class="glyphicon glyphicon glyphicon-lock"></span> Intellectual property of A Song of Ice and Fire, this map, all characters and all locations belong to George R.R. Martin. </li>
+
+
+                        </ul>
+                    </div><i class="ionicons ion-mouse"></i>
                 </div>
             </div>
         </nav>
@@ -69,33 +82,33 @@
                         <b id="amount"></b>
                         <div id="slider-range-max">
                         </div>
-                        <button id="playButton"  onclick="play()">&#9658</button>
-                        <button  id="pauseButton" onclick="pause()">&#10074; &#10074;</button>
+                        <button id="playButton"  onclick="play()"><span class="	glyphicon glyphicon-play"></span></button>
+                        <button  id="pauseButton" onclick="pause()"><span class="glyphicon glyphicon-pause"></span></button>
                     </div>
                 </div>
-                
-                <div id='settingsLower'>
-                <ul id="checkboxes">
-                    <li><input type="checkbox" id="toggleAreas" onClick="toggleLayer()">Show areas<br></li> 
-                    <li id="familyDescription" >
-                    <ul >
-                        <li id="theWall">The Wall</li>
-                        <li id="theNorth">The North</li>
-                        <li id="ironIslands">Iron Islands</li>
-                        <li id="theVale">The Vale</li>
-                        <li id="riverlands">Riverlands</li>
-                        <li id="westerlands">Westerlands</li>
-                        <li id="theReach">The Reach</li>
-                        <li id="stormlands">Stormlands</li>
-                        <li id="crownlands">Crownlands</li>
-                        <li id="dorne">Dorne</li>
-                    </ul>
-                    </li>
-                    <li><input type="checkbox" id="toggleMarkers" onClick="toggleMarkers()">Hide markers<br></li> 
-                </ul>
 
-                <div id="coords"></div> <br>
-            </div>
+                <div id='settingsLower'>
+                    <ul id="checkboxes">
+                        <li><input type="checkbox" id="toggleAreas" onClick="toggleLayer()">Show areas<br></li> 
+                        <li id="familyDescription" >
+                            <ul >
+                                <li id="theWall">The Wall</li>
+                                <li id="theNorth">The North</li>
+                                <li id="ironIslands">Iron Islands</li>
+                                <li id="theVale">The Vale</li>
+                                <li id="riverlands">Riverlands</li>
+                                <li id="westerlands">Westerlands</li>
+                                <li id="theReach">The Reach</li>
+                                <li id="stormlands">Stormlands</li>
+                                <li id="crownlands">Crownlands</li>
+                                <li id="dorne">Dorne</li>
+                            </ul>
+                        </li>
+                        <li><input type="checkbox" id="toggleMarkers" onClick="toggleMarkers()">Hide markers<br></li> 
+                    </ul>
+
+                    <div id="coords"></div> <br>
+                </div>
             </div>
         </div>
 

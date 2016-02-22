@@ -2,12 +2,17 @@ html {
     height: 100%; 
 }
 
+@font-face{
+    font-family: "Game of Thrones";
+    src:url("CSS/GameofThrones.ttf") format ('truetype');
+}
 
-
-body { 
+body {
     height: 100%;
-    margin: 0px; 
-    padding: 0px 
+    margin: 0px;
+    padding: 0px;
+    font-family: "Game of Thrones";
+    letter-spacing: 0.1px;
 }
 
 #map_canvas {
@@ -54,7 +59,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     background: #eee
-}​
+}â€‹
 
 #settings #hide {
     position: absolute; 
@@ -157,7 +162,7 @@ body {
     height: 20px;
     font-size: smaller;
     border-radius: 4px;
-    text-align: left;
+    text-align: center;
     color: black;
     background-color: firebrick;
     border: 1px solid #FFF;
@@ -166,6 +171,20 @@ body {
 
 #checkboxes {
     display: inherit;
+}
+
+
+#dialog {
+    display: none;
+}
+
+#infolist {
+    list-style-type: none;
+}
+
+#infolist li {
+        margin-bottom: 7px;
+
 }
 
 @media screen and (max-width: 365px) {

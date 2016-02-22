@@ -273,6 +273,13 @@ function toggleMarkers()
     }
 }
 
+$(function () {
+    $("#hello").click(function () {
+        $("#dialog").dialog({
+            width: 400,
+        });
+    });
+});
 
 
 var playing = false;
