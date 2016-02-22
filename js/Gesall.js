@@ -21,8 +21,9 @@ var CustomMapType = new CustomMapType();
 
 //Array containing character/episode-specific information that is used when placing Markers on the map
 var locations = [
+    episode = [],
     episode1 = [
-        ['San Francisco: Power Outage', 81.95, -160.1, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+        ['Daenerys Targarien', 81.95, -160.1, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Davos', 82.16, -163.81, 'img/davos.png'],
         ['Tyrion Lannister', 83.45, -169.15, 'img/Tyrion.png'],
@@ -35,36 +36,91 @@ var locations = [
         ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
         ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
         ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
-        ['Brienne', 83.50, -168.92, 'img/Jon.png'],
-        ['Brienne', 83.44, -169.55, 'img/Hound.png']
+        ['Jon Snow', 83.50, -168.92, 'img/Jon.png'],
+        ['The Hound', 83.44, -169.55, 'img/Hound.png']
+
+
+
     ],
     episode2 = [
-        ['San Francisco: Power Outage', 82.95, -160.1, "img/Dany.png", "Now shes more liky yurr"],
-        ['Sausalito', 81.94, -166.7, 'img/Tyrion.png', "burr"]
+        ['Daenerys Targarien', 81.94, -159.82, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tyrion Lannister', 83.45, -169.15, 'img/Tyrion.png'],
+        ['Ned Stark', 82.37, -167.695, 'img/Ned.png'],
+        ['Khal Drogo', 81.906, -159.96, 'img/Drogo.png'],
+        ['Jamie Lannister', 83.45, -169.05, 'img/Jamie.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
+        ['Samwell Tarly', 81.24, -171.24, 'img/Samwell.png'],
+        ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Jon Snow', 83.50, -168.92, 'img/Jon.png'],
+        ['The Hound', 83.44, -169.55, 'img/Hound.png']
     ],
     episode3 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
     ],
     episode4 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
     ],
     episode5 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
     ],
     episode6 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png']
     ],
     episode7 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
     ],
     episode8 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
     ],
     episode9 = [
+        ['Ned Stark', 81.878, -166.827, 'img/Ned.png'], //Ned dies
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
     ],
     episode10 = [
+        ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
+        ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
+         This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
+        ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
     ],
     episode11 = [
-        ['Brienne', 81.63, -163.54, 'img/Bronn.png']
+        ['Bronn', 81.63, -163.54, 'img/Bronn.png']
 
-    ],
+    ]
 ];
 
-var episode = 0;
+var episode = 1;
 //Variable zoomLevel that is used to keep map zoomed in one place between episode-toggles.
 var zoomLevel = 5;
 
@@ -124,8 +180,8 @@ function createMarker(i) {
     });
 
     google.maps.event.addListener(marker[i], 'rightclick', function () {
-                    marker[i].setVisible(false);
-                    
+        marker[i].setVisible(false);
+
 
     });
 
@@ -196,7 +252,7 @@ function toggleLayer()
         for (i = 0; i < zones.length; i++) {
             area[i].setMap(null);
         }
-          $('#familyDescription').css('display', 'none');
+        $('#familyDescription').css('display', 'none');
     }
 }
 
@@ -251,9 +307,9 @@ function pause() {
 $(document).ready(function () {
     $("#slider-range-max").slider({
         range: "max",
-        min: 0,
+        min: 1,
         max: 10,
-        value: 0,
+        value: 1,
         slide: function (event, ui) {
             $("#amount").text(ui.value);
             episode = ui.value;
@@ -264,6 +320,29 @@ $(document).ready(function () {
     $("#amount").text($("#slider-range-max").slider("value"));
 }
 );
+
+
+var hideSettings = false;
+//Function that allows user to minimize the settings-window
+function toggleSettings() {
+
+    if (hideSettings) {
+        hideSettings = false;
+        $("#settingsLower").css({display: "inherit"});
+        $("#hideButton").text("Hide");
+        $("#settings").animate({height: "300px"});
+
+    } else {
+        hideSettings = true;
+        $("#settingsLower").css({display: "none"});
+        $("#hideButton").text("Show");
+        $("#settings").animate({height: "50px"});
+
+
+    }
+}
+
+
 
 //$(document).ready(function () {   KOD FÖR ATT HÄMTA DATA FRÅN ASOIF-WIKI API
 //    var url = "http://awoiaf.westeros.org/api.php?action=mobileview&page=Rhaegar_Targaryen&sections=0&format=json";

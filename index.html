@@ -61,9 +61,9 @@
         <div id="container">
 
             <div id="settings">
+                <button id="hideButton" onclick="toggleSettings()">Hide</button>
 
                 <div id="header">
-                    <div id="hide">-</div>
                     <div id="slider">
                         <label>Episode: &nbsp; </label>
                         <b id="amount"></b>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 
-                <div>
+                <div id='settingsLower'>
                 <ul id="checkboxes">
                     <li><input type="checkbox" id="toggleAreas" onClick="toggleLayer()">Show areas<br></li> 
                     <li id="familyDescription" >
