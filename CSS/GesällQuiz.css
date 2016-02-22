@@ -1,0 +1,138 @@
+
+#container {
+    min-height: 300px;
+    text-align: center;
+    height: available;
+    width: available;
+}
+
+#mellan {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+
+#center {
+    width: 75%;
+    float: left;
+    height: 100%;
+    margin-left: 5px;
+}
+
+#vänster {
+    float: left;
+    width: 10%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333;
+}
+
+.quizContainer {
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    -moz-box-shadow: 10px 10px 5px #000000;
+    -webkit-box-shadow: 10px 10px 5px #000000;
+    box-shadow: 10px 10px 5px #000000;
+    position: relative;
+    
+}
+
+.quizContainer h1 {
+    font-family:'Rokkitt', serif;
+    text-align: center;
+}
+.quizContainer ul {
+    list-style: none;
+    margin-top: 25px;
+}
+.quizContainer li {
+    font-size: x-large;
+    color: white;
+      font-family: Courier, serif;
+}
+.quizContainer input[type=radio] {
+    border: 0px;
+    width: 14px;
+    height: 14px;
+    margin-right: 20px;
+}
+
+.quizContainer .nextButton {
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+    font-size: medium;
+    margin: auto;
+}
+
+.quizContainer .nextButton:hover {
+    background-color: goldenrod;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.quizContainer .startButton {
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    color: #333;
+    font-size: medium;
+    margin: auto;
+}
+
+.quizContainer .startButton:hover {
+    background-color: goldenrod;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.quizContainer li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.quizContainer .question {
+    font-size: x-large;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    color: #333;
+}
+.quizContainer .quizMessage {
+    background-color: white;
+    border-radius: 6px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 6px;
+    text-align: center;
+    color: red;
+    font-size: large;
+}
+
+.result {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
