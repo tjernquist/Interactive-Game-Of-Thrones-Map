@@ -27,7 +27,13 @@ var locations = [
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Davos', 82.16, -163.81, 'img/davos.png'],
         ['Tyrion Lannister', 83.45, -169.15, 'img/Tyrion.png'],
-        ['Ned Stark', 83.49, -169.18, 'img/Ned.png'],
+        ['Eddard Stark', 83.49, -169.18, 'img/Ned.png', "Rodrik reports that a deserter from the Night’s Watch has been taken in the hills. The law is clear: he must be executed. Eddard agrees to attend to the matter. He orders that Robb and Jon will join them and then, after a moment’s reflection, Bran. \n\
+        Catelyn objects: Bran is too young to see such things. Eddard responds that Bran won’t be a boy forever and that winter is coming. After he leaves, Catelyn gives Jon Snow a look of loathing. <br> <br> Up in the hills, Will is brought before Eddard. He claims that he saw the White Walkers. \n\
+        He admits the deserting his post was wrong and he should have returned to the Wall to warn them, but he was too terrified and just wanted to flee. He asks Eddard to send word to his family. Eddard pronounces the death sentence on him and Jon urges Bran not to look away. Eddard beheads Will using his Valyrian steel greatsword, Ice. .\n\
+        Afterwards, Eddard asks Bran why it was necessary for him to behead the deserter personally. Bran replies that the Starks’ way is the old way, and Eddard agrees, saying that the man who passes the sentence should swing the sword. <br> <br> \n\
+        The party returns to Winterfell over a bridge, only to find a dead stag with its entrails spilled out. Eddard is puzzled by what could have caused this. The puzzle is solved when they find a dead direwolf nearby, with one of the stag’s antlers still caught in its throat <br> <br>\n\
+        Eddard is sitting in front of the godswood’s heart tree, cleaning his blade. Catelyn arrives, musing that she still feels like an outsider in this place. Eddard laughs, pointing out that she has five northern children and is not an outsider. Catelyn wonders if the Old Gods of the Forest agree, but Eddard replies that it’s her gods that have all the rules Eddard notices that Catelyn is upset and she tells him that there has been a raven from King’s Landing: Jon Arryn is dead. She knows he was like a father to Eddard, and she is sorry for his loss. He was taken by a sudden fever. His wife, Lysa, who is also Catelyn’s sister, is well, as is her son Robin. \n\
+        Catelyn tells him there is more: King Robert and his entire retinue are already riding for Winterfell. Eddard realizes there is only one reason why the king might be coming all this way to see him. She points out that he can always say no."],
         ['Khal Drogo', 81.94, -159.85, 'img/Drogo.png'],
         ['Jamie Lannister', 83.45, -169.05, 'img/Jamie.png'],
         ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
@@ -38,9 +44,6 @@ var locations = [
         ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
         ['Jon Snow', 83.50, -168.92, 'img/Jon.png'],
         ['The Hound', 83.44, -169.55, 'img/Hound.png']
-
-
-
     ],
     episode2 = [
         ['Daenerys Targarien', 81.94, -159.82, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
@@ -49,7 +52,7 @@ var locations = [
         ['Tyrion Lannister', 83.45, -169.15, 'img/Tyrion.png'],
         ['Ned Stark', 82.37, -167.695, 'img/Ned.png'],
         ['Khal Drogo', 81.906, -159.96, 'img/Drogo.png'],
-        ['Jamie Lannister', 83.45, -169.05, 'img/Jamie.png'],
+        ['Jamie Lannister', 82.42, -167.93, 'img/Jamie.png'],
         ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
         ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
         ['Samwell Tarly', 81.24, -171.24, 'img/Samwell.png'],
@@ -57,7 +60,8 @@ var locations = [
         ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
         ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
         ['Jon Snow', 83.50, -168.92, 'img/Jon.png'],
-        ['The Hound', 83.44, -169.55, 'img/Hound.png']
+        ['The Hound', 82.38, -167.99, 'img/Hound.png'],
+        ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
     ],
     episode3 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
@@ -65,6 +69,16 @@ var locations = [
         ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
+        ['Tyrion Lannister', 83.98, -166.61, 'img/Tyrion.png'],
+        ['Jamie Lannister', 81.926, -167.0, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 81.24, -171.24, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode4 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
@@ -72,6 +86,16 @@ var locations = [
         ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.36, -167.65, 'img/Tyrion.png'],
+        ['Jamie Lannister', 81.926, -167.0, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode5 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
@@ -79,13 +103,33 @@ var locations = [
         ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.52, -166.19, 'img/Tyrion.png'],
+        ['Jamie Lannister', 81.926, -167.0, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.91, -166.85, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode6 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
         ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
         ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
-        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png']
+        ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.02, -173.14, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.52, -166.19, 'img/Tyrion.png'],
+        ['Jamie Lannister', 81.926, -167.0, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.765, -166.157, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode7 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
@@ -93,6 +137,15 @@ var locations = [
         ['Daenerys Targarien', 81.47, -141.503, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.51, -141.503, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tyrion Lannister', 82.52, -166.19, 'img/Tyrion.png'],
+        ['Jamie Lannister', 82.34, -169.848, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.38, -171.28, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode8 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'],
@@ -100,6 +153,16 @@ var locations = [
         ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.52, -168.81, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.45, -166.42, 'img/Tyrion.png'],
+        ['Jamie Lannister', 82.34, -169.848, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.38, -171.28, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode9 = [
         ['Ned Stark', 81.878, -166.827, 'img/Ned.png'], //Ned dies
@@ -107,17 +170,33 @@ var locations = [
         ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.52, -168.81, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.54, -168.82, 'img/Tyrion.png'],
+        ['Jamie Lannister', 82.38, -169.88, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.38, -171.28, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
     episode10 = [
         ['Jon Snow', 83.99, -166.83, 'img/Jon.png'],
         ['Daenerys Targarien', 81.017, -137.12, "img/Dany.png", "<p><b>Daenerys Targaryen</b>, known as <b>Daenerys Stormborn</b> and <b>Dany</b>, is one of the last confirmed members of House Targaryen, along with her older brother Viserys, and she is one of the major POV characters in A Song of Ice and Fire. In the television adaptation Game of Thrones, Daenerys is played by Emilia Clarke.<p>  \n\
          This article uses material from the ASOIF-wiki article <a href=http://awoiaf.westeros.org/index.php/Daenerys_Targaryen>Daenerys Targaryen</a>, which is released under the <a href=http://creativecommons.org/licenses/by-sa/3.0/>Creative Commons Attribution-Share-Alike License 3.0</a>."],
         ['Khal Drogo', 81.023, -137.12, 'img/Drogo.png'],
+        ['Davos', 82.16, -163.81, 'img/davos.png'],
+        ['Tywin Lannister', 82.36, -167.67, 'img/Tywin.png'],
+        ['Tyrion Lannister', 82.39, -167.67, 'img/Tyrion.png'],
+        ['Jamie Lannister', 82.38, -169.88, 'img/Jamie.png'],
+        ['Renly Baratheon', 81.38, -171.28, 'img/Renly.png'],
+        ['Lysa Arryn', 82.54, -166.30, 'img/Lysa.png'],
+        ['Robin Arryn', 82.54, -166.06, 'img/RobinArryn.png'],
+        ['Samwell Tarly', 83.997, -167.03, 'img/Samwell.png'],
+        ['Petyr Baelish (Littlefinger)', 81.92, -166.65, 'img/Petyr.png'],
+        ['The Hound', 81.90, -166.475, 'img/Hound.png'],
     ],
-    episode11 = [
-        ['Bronn', 81.63, -163.54, 'img/Bronn.png']
-
-    ]
 ];
 
 var episode = 1;
@@ -168,7 +247,6 @@ function createMarker(i) {
         title: locations[episode][i][0]
     });
 
-
     //Creates a infoWindow containing text from the locations-array describing the character
     var infowindow = new google.maps.InfoWindow({
         content: locations[episode][i][4]
@@ -181,8 +259,6 @@ function createMarker(i) {
 
     google.maps.event.addListener(marker[i], 'rightclick', function () {
         marker[i].setVisible(false);
-
-
     });
 
     //Function to keep the markers hidden between episode-changes.
@@ -253,10 +329,23 @@ function toggleLayer()
             area[i].setMap(null);
         }
         $('#familyDescription').css('display', 'none');
+        map.clearOverLays();
     }
 }
 
+//Support-function to hide all markers, which allows the map to update markers without reloading the map.
+function hideMarkers() {
+    for (i = 0; i < locations[episode].length; i++) {
+        marker[i].setMap(null);
+    }
+}
 
+//Support-function to show all markers, which allows the map to update markers without reloading the map.
+function showMarkers() {
+    for (i = 0; i < locations[episode].length; i++) {
+        createMarker(i);
+    }
+}
 
 function toggleMarkers()
 {
@@ -273,15 +362,18 @@ function toggleMarkers()
     }
 }
 
+
+//Function that opens a information-box containing some site-info using JQuerys dialog-function.
 $(function () {
     $("#hello").click(function () {
         $("#dialog").dialog({
-            width: 400,
+            width: 400
         });
     });
 });
 
 
+//Boolean variable used to limit user from running multiple play()-functions.
 var playing = false;
 
 //A play button that moves the episode-slider forward one step every 3 seconds.
@@ -294,11 +386,11 @@ function play() {
         $("#playButton").toggleClass("active");
 
         timer = setInterval(function () {
+            hideMarkers();
             episode++;
             $("#amount").text(episode);
             $("#slider-range-max").slider('value', episode);
-            zoomLevel = map.getZoom();
-            initialize();
+            showMarkers();
         }, 3000);
     }
 }
@@ -318,10 +410,10 @@ $(document).ready(function () {
         max: 10,
         value: 1,
         slide: function (event, ui) {
+            hideMarkers();
             $("#amount").text(ui.value);
             episode = ui.value;
-            zoomLevel = map.getZoom();
-            initialize();
+            showMarkers();
         }
     });
     $("#amount").text($("#slider-range-max").slider("value"));
@@ -344,8 +436,6 @@ function toggleSettings() {
         $("#settingsLower").css({display: "none"});
         $("#hideButton").text("Show");
         $("#settings").animate({height: "50px"});
-
-
     }
 }
 
